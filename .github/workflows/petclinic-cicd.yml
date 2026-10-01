@@ -7,18 +7,22 @@ on:
 
 
 jobs:
-    build:
-      - name: Build, Test Scan & Push
-      runs-on: ubuntu-latest
-      timeout-minutes: 45
-      permissions:
-          contents: read
-      steps:
+  build:
+     name: Build, Test Scan & Push
+     runs-on: ubuntu-latest
+     timeout-minutes: 45
+     permissions:
+         contents: read
+     steps:
          - name: Checkout
            uses: actions/checkout@v4
            with:
              fetch-depth: 0
-        
+         - name: Setup JDK
+           uses: actions/setup-java@v6
+           with:
+             distribution: temurin
+             java-version: '17'            
         
         
   
