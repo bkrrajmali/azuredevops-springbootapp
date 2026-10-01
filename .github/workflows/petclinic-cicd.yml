@@ -6,7 +6,7 @@ on:
   workflow_dispatch: 
 
 
-  jobs:
+jobs:
     build:
       name: Build, Test Scan & Push
       runs-on: ubuntu-latest
