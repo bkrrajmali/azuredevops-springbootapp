@@ -22,7 +22,7 @@ jobs:
            uses: actions/setup-java@v6
            with:
              distribution: temurin
-             java-version: '17'            
+             java-version: '21'            
          - name: Sonar Analysis
            env:
               SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
