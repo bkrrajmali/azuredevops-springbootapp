@@ -34,7 +34,7 @@ jobs:
                  -Dsonar.oraganization=bkrrajmali \
                  -Dsonar.projectKey=myown-springbootapp \
                  -Dsonar.projectName=myown-springbootapp \
-                 -Dsonar.java.binaries=target/classes
+                 -Dsonar.java.binaries=target/classes \
                  -Dsonar.qualitygate.timeout=300
              
         
