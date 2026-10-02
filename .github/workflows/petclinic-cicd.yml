@@ -40,7 +40,9 @@ jobs:
            uses: azure/login@v3
            with:
               creds: ${{ secrets.AZURE_CREDENTIALS }}
-             
+         - name: Check Build Output
+           run: ls -la target/
+        
          - name: LOGIN to ACR
            run: az acr login --name democontainerreg772
 
